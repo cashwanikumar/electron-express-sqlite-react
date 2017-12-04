@@ -32,7 +32,7 @@
   },
   "browserslist": "electron 1.4",
   "build": {
-    "productName": "ElectronReact",
+    "productName": "ReactTest1",
     "appId": "org.develar.ElectronReact",
     "files": [
       "dist/",
@@ -40,7 +40,8 @@
       "app.html",
       "main.js",
       "main.js.map",
-      "package.json"
+      "package.json",
+      "db_file/"
     ],
     "dmg": {
       "contents": [
