@@ -1,7 +1,7 @@
-Electro-express-react-sqlite
+POS electron
 ==================
 
 STILL IN DEVELOPMENT
 
-reference:- https://github.com/chentsulin/electron-react-boilerplate
+reference:- https://github.com/amilajack/erb-sqlite-example
 

@@ -2,7 +2,8 @@
 // @flow
 import { app, BrowserWindow } from 'electron';
 import MenuBuilder from './menu';
-const server = require('./server/server');
+
+const server = require('../server/server');
 
 let mainWindow = null;
 

@@ -1,5 +1,5 @@
 {
-  "name": "electron-express-sqlite-react",
+  "name": "reactSqlite",
   "productName": "Electron-Express",
   "version": "0.11.0",
   "description": "",
@@ -32,8 +32,8 @@
   },
   "browserslist": "electron 1.4",
   "build": {
-    "productName": "ReactTest1",
-    "appId": "org.develar.ElectronReact",
+    "productName": "electronSqlite",
+    "appId": "org.develar.ElectronSqlite",
     "files": [
       "dist/",
       "node_modules/",
