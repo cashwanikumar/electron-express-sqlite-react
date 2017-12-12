@@ -1,17 +1,11 @@
-import path from 'path';
-import electron from 'electron';
-import serverConst from '../constant';
-
-// const path = require('path');
-// const electron = require('electron');
+const path = require('path');
+const electron = require('electron');
+const serverConst = require('../constant');
 
 /*  linux:- ~/.config/Electron-Express
  *  windows:- C:\User\Win10\AppData\Programs\{project name}
 */
 const userDir = (electron.app || electron.remote.app).getPath('userData');
-
-const dbName = 'pos';
-const dbExt = 'sqlite';
 
 function dbLocation(env) {
   const environment = env || process.env.NODE_ENV;
@@ -24,16 +18,15 @@ function dbLocation(env) {
           serverConst.db.name}.${serverConst.db.ext}`;
 
     case 'electron_prod' :
-      return path.join(userDir, `${dbName}.${dbExt}`);
+      return path.join(userDir, `${serverConst.db.name}.${serverConst.db.ext}`);
 
     default:
-      return `${path.resolve(__dirname)}/../../../resources/db_development/${serverConst.db.name}.${dbExt}`;
+      return `${path.resolve(__dirname)}/../../../resources/db_development/${serverConst.db.name}.${serverConst.db.ext}`;
 
   }
 }
-
+console.log(serverConst);
 module.exports = {
-  dbLocation,
   development: {
     username: serverConst.db.username,
     password: serverConst.db.password,
