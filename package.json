@@ -1,6 +1,6 @@
 {
-  "name": "reactSqlite",
-  "productName": "Electron-Express",
+  "name": "POSRestro",
+  "productName": "POS-Restro",
   "version": "0.11.0",
   "description": "",
   "main": "main.js",
@@ -32,16 +32,15 @@
   },
   "browserslist": "electron 1.4",
   "build": {
-    "productName": "electronSqlite",
-    "appId": "org.develar.ElectronSqlite",
+    "productName": "POSRestro",
+    "appId": "org.app.POSRestro",
     "files": [
       "dist/",
       "node_modules/",
       "app.html",
       "main.js",
       "main.js.map",
-      "package.json",
-      "db_file/"
+      "package.json"
     ],
     "dmg": {
       "contents": [
@@ -97,7 +96,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/cashwanikumar/electron-express-sqlite-react/issues#readme",
+  "homepage": "https://cashwanikumar@bitbucket.org/cashwanikumar-t1/posrestro.git#readme",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
